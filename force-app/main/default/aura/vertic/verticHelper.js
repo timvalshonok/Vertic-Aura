@@ -1,5 +1,5 @@
 ({      
-    getAccountList: function(component) {
+    getContactsList: function(component) {
         var action = component.get('c.getContacts');
         var self = this;
         action.setCallback(this, function(actionResult) {

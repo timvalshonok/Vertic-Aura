@@ -2,8 +2,8 @@
     <aura:attribute name="contacts" type="List" />
     <aura:attribute name="key" type="String" /> 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />        
-    <lightning:input type="text" name="searchKey" label="Enter" aura:id="searchKey" onchange="{!c.searchKeyChange}" placeholder="Search"/>  
-            
+    <lightning:input class="slds-text-title_caps slds-var-m-bottom_small" type="text" name="searchKey" aura:id="searchKey"  placeholder="SEARCH BY NAME"/>  
+    <lightning:button class="slds-var-m-bottom_small" label="FILTER" variant="brand" onclick="{!c.searchKeyChange}"/>
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
         <thead>
             <tr class="slds-text-heading_label">              

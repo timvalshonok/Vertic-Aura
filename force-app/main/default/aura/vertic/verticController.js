@@ -1,10 +1,10 @@
 ({
     doInit: function(component, event, helper) {
-        helper.getAccountList(component);
+        helper.getContactsList(component);
     },
     searchKeyChange: function(component, event) {
         var searchKey = component.find("searchKey").get("v.value");
-        console.log('searchKey:::::'+searchKey);
+        console.log('searchKey=>'+searchKey);
         var action = component.get("c.findByName");
         action.setParams({
             "searchKey": searchKey
