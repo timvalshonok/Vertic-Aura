@@ -1,5 +1,5 @@
 @isTest
-public with sharing class TestContactsController {
+public with sharing class ContactsControllerTest {
 
     @TestSetup
     static void setup(){
@@ -9,7 +9,7 @@ public with sharing class TestContactsController {
         insert contacts;
     }
     
-    @isTest public static void testGetContacts() {
+    @isTest public static void getContactsTest() {
 
         Test.startTest();
         List<Contact> actual = ContactsController.getContacts();
@@ -23,7 +23,7 @@ public with sharing class TestContactsController {
         System.assertEquals(expected, actual, 'Should be list of contacts');
     }
 
-    @isTest public static void testFindByName() {
+    @isTest public static void findByNameTest() {
 
         String firstName = 'Jack';
 
